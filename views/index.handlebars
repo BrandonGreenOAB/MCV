@@ -5,8 +5,10 @@
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{this.name}}
-  {{burger-block}}
+  <li>
+    {{this.name}}
+    {{> burgers/burger-block}}
+  </li>
   {{/unless}}
   {{/each}}
 </ul>
@@ -16,7 +18,7 @@
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-  {{burger-block}}
+  {{> burgers/burger-block}}
   {{/if}}
   {{/each}}
 </ul>
@@ -35,5 +37,5 @@
     <input type="radio" name="devour" value="0"> Awake
   </div> --}}
 
-  <button type="submit">Add Burger</button>
+  <button type="submit"><i class="fas fa-hamburger"></i> Add Burger</button>
 </form>
