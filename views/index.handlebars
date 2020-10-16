@@ -1,11 +1,11 @@
-<h1>Cats!</h1>
+<h1>Burgers!</h1>
 
 <h2>Burgers that are eaten!</h2>
 
 <ul>
   {{#each burgers}}
   {{#unless devoured}}
-  {{> burgers/burger-block}}
+  {{burger-block}}
   {{/unless}}
   {{/each}}
 </ul>
@@ -15,7 +15,7 @@
 <ul>
   {{#each burgers}}
   {{#if devoured}}
-  {{> burgers/burger-block}}
+  {{burger-block}}
   {{/if}}
   {{/each}}
 </ul>
