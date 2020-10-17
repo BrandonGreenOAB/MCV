@@ -1,19 +1,98 @@
+@keyframes example {
+  from {
+    color: red;
+  }
+  to {
+    color: yellow;
+  }
+  from {
+    color: yellow;
+  }
+  to {
+    color: orange;
+  }
+}
+
+/* The element to apply the animation to */
+.mainHeader {
+  color: red;
+  animation-name: example;
+  animation-duration: 6s;
+  animation-iteration-count: infinite;
+}
+
+body {
+  background-image: url(./vintage-wallpaper.png);
+}
+
+.flex-box {
+  font-family: "Chilanka", cursive;
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+}
+.flex-box2 {
+  font-family: "Chilanka", cursive;
+  display: flex;
+  flex: wrap;
+  justify-content: center;
+  align-content: center;
+}
+
 li {
   padding: 5px;
   margin: 5px;
-  background: #faebd7;
+  color: white;
+  font-family: "Chilanka", cursive;
+  background: linear-gradient(
+    90deg,
+    rgba(115, 115, 143, 0) 0%,
+    rgba(38, 139, 159, 1) 49%,
+    rgba(26, 116, 134, 0) 100%
+  );
+
+  border-radius: 50px;
+  width: 100%;
+  justify-content: center;
 }
 
 .label {
+  font-family: "Chilanka", cursive;
   font-weight: bold;
 }
 
 .create-update-form {
+  font-family: "Chilanka", cursive;
   padding: 5px;
   margin: 5px;
   background: aqua;
 }
 
-.form-group {
+.form-group,
+.fa-hamburger {
+  font-family: "Chilanka", cursive;
   margin-bottom: 5px;
+  text-align: center;
+  align-content: center;
+}
+
+.burgerButton {
+  font-family: "Chilanka", cursive;
+  margin-left: 35%;
+}
+
+.header,
+.mainHeader {
+  font-family: "Chilanka", cursive;
+  text-align: center;
+}
+
+.create-form {
+  font-family: "Chilanka", cursive;
+  align-content: center;
+}
+
+.delete-burger {
+  font-family: "Chilanka", cursive;
+  border-radius: 5px;
 }
